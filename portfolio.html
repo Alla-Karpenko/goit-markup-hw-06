@@ -58,7 +58,7 @@
     <main class="main">
       <hr>
       <div class="container">
-        <h1 hidden>Portfolio</h1>
+        <h1 class="visually-hidden">Portfolio</h1>
         <div class="filter">
          <a class="modal-btn link"> <span class="icon"></span>Все</a>
          <a class="modal-btn link"> <span class="icon"></span>Веб-сайт</a>
@@ -203,9 +203,8 @@
 
         <div class="mail-input">
           <h2 class="mail-input-title">Подпишитесь на рассылку</h2>
-          <form action="#" class="form-input"></form>
-         
-          
+          <form action="#" class="form-input">
+          <input type="text" class="form-input-mail" placeholder="E-mail"></form>
         </div>
           
         <div class="button-input">
@@ -213,7 +212,7 @@
             <span class="icon"></span>
             Подписаться 
             <svg class="input-icon">
-              <use hreff="./img/"></use>
+              <use href="./img/sprite.svg#icon-send"></use>
             </svg>
           </a>
         </div>
