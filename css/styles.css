@@ -839,18 +839,24 @@
 }
 
 .modal-form-btn {
+  justify-content: center;
   font-weight: 700;
   font-size: 16px;
   line-height: 30px;
   /* identical to box height, or 187% */
   color: #FFFFFF;
+  
   background: var(--accent-color);
   border-radius: 4px;
   margin-top: 30px;
   width: 200px;
   height: 50px;
   cursor: pointer;
-  
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-wrapper {
+  padding-left: 124px;
 }
 
 .modal-form-field-wrapper {
@@ -874,6 +880,7 @@
 
 .modal-form-input:focus + .modal-form-svg-icon {
  fill: var(--accent-color);
+ transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-field {
   
@@ -884,6 +891,7 @@
   letter-spacing: 0.01em;
   color: #757575;
   margin-top: 10px;
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-message {
@@ -901,6 +909,7 @@
   color: rgba(117, 117, 117, 0.5);
   padding-top: 12px;
   padding-left: 16px;
+  resize: none;
 }
 
 .modal-form-svg-icon {
@@ -935,11 +944,11 @@
   width: 11px;
   border-radius: 0px;
   background-image: url("../img/Vector.png");
-  background: #FFFFFF;
-  border: 0.2px solid #FFFFFF;
+ 
 }
 
 .modal-form-policy:checked + .modal-form-policy-label::before {
+  background-image: url("../img/Vector.png");
   background-color: var(--accent-color);
 }
 /*======== END MODAL WINDOW ======*/
